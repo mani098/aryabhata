@@ -1,0 +1,85 @@
+body {
+	overflow-x: hidden;
+	font-size: 13px;
+}
+
+a {
+	text-decoration: none !important;
+	color: #FF7950;
+}
+th {
+	background-color: #c6cfd3;
+}
+
+table {
+  table-layout:fixed;
+  width:100%;
+}
+
+* {
+  word-wrap:break-word;
+}
+
+a:hover {
+	color: #E66D48 !important;
+}
+
+.login-wrapper {
+	padding: 80px 50px 80px 50px;
+	background-color: #3d4250;
+	border: 1px solid #ff7950 !important;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.login-title {
+	font-size: 30px;
+	color: #FF412C;
+}
+
+.login-input {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.log-row {
+	background: #f5f5f5;
+	margin-top: 10px;
+	padding: 10px 20px;
+	border-color: #ddd;
+}
+#log-calculations{
+	margin-top: 40px;
+}
+#calculate{
+	float: right;
+}
+
+/*Customized Kube classes*/
+
+.forms {
+	margin-top: 20px;
+}
+
+header.group {
+	background-color: #3d4250 !important;
+	border-bottom: 1px solid #ff7950;
+	padding-bottom: 0px;
+}
+
+.navbar li {
+	padding: 1em;
+	font-size: 16px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar a:hover {
+	color: #0F3E84;
+}
+
+input[type="text"]:focus{
+	border-color: None;
+	box-shadow: None;
+}

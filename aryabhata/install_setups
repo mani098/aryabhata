@@ -1,0 +1,5 @@
+~/.virtualenvs/aryabhata/local/lib/python2.7/site-packages/gevent/ssl.py line no. 422
+    def get_server_certificate(addr, ssl_version=PROTOCOLv3, ca_certs=None):
+    def get_server_certificate(addr, ssl_version=PROTOCOLv23, ca_certs=None):
+
+

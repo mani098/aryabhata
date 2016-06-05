@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home | Aryabhata</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/static/css/kube.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="units-row">
+			<div class="unit-centered unit-40">
+				<div class='login-wrapper'>
+					<div class='big login-title'> Aryabhata </div>
+					<br>
+					<a href="/accounts/google/login"><img src="/static/img/google-sign.png" width="220" height="75"></a>
+				</div>
+			</div>
+		</div>
+		{% if messages %}
+		<div class="units-row">
+			<div class="unit-centered unit-40">
+				<div><p class="text-centered label-red">
+                     {% for message in messages %}
+                         {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %} {{ message }} {% endif %}
+                    {% endfor %}
+                </p></div>
+			</div>
+		</div>
+		{% endif %}
+	</body>
+</html>

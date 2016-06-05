@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        {% load socketio_tags %}
+        {% socketio %}
+		<title>Home | Aryabhata</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/static/css/kube.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="/static/js/common.js"></script>
+	</head>
+	<body>
+		<header class="group">
+			<nav class="navbar navbar-left">
+				<ul>
+					<li> <a href="/">Aryabhata</a></li>
+				</ul>
+			</nav>
+			<nav class="navbar navbar-right">
+				<ul>
+					<li><a href="/accounts/logout">Sign out</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="units-row units-padding" style="margin-top:150px;">
+			<div class="unit-centered unit-30 forms-inline">
+                <input type="hidden" id="userId" value="{{ request.user.id }}">
+                <input id="math-eq" type="text" class="width-60" style="height: 2.7em;"/>
+                <button class="btn" id="calculate">Calculate</button>
+                <div id="log-calculations">
+                    {% for eq in ctx %}
+                       <div class='log-row'> {{ eq }}</div>
+                    {% endfor %}
+                </div>
+			</div>
+		</div>
+	</body>
+</html>
