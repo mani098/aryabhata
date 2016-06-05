@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'accounts',
 ]
 
-SOCKETIO_HOST = 'localhost'
+SOCKETIO_HOST = '0.0.0.0'
 SOCKETIO_PORT = '8001'
 
 MIDDLEWARE_CLASSES = [
