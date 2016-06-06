@@ -6,5 +6,5 @@ from models import CalcLog
 
 @login_required()
 def dashboard(request):
-    data = CalcLog.objects.all().values_list('equation', flat=True)
+    data = CalcLog.objects.all().order_by('-added_at').values_list('equation', flat=True)
     return render(request, 'dashboard.html', {'ctx': data})
